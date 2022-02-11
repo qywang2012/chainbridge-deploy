@@ -1,0 +1,59 @@
+{
+  "relayerThreshold": "3",
+  "ethchains": [
+    {
+      "name": "bsc Testnet",
+      "chainId": "97",
+      "endpoint": "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      "bridge": "0x872A35f134273AFb0aEaC151E8fc97a878Cc6Ffb",
+      "erc20Handler": "0x319878C4400Ab662eaA264Ae7c559bf991630456",
+      "erc721Handler": "0x57d5F2d5763D964399b933a70C5c1b12f613B422",
+      "genericHandler": "0x75B94f65673676089379097c32601b6e7D9a3455",
+      "gasLimit": "1000000",
+      "maxGasPrice": "10000000000",
+      "startBlock": "16500000",
+      "http": "true",
+      "relayers": [
+        "0xff93B45308FD417dF303D6515aB04D9e89a750Ca",
+        "0x8e0a907331554AF72563Bd8D43051C2E64Be5d35",
+        "0x24962717f8fA5BA3b931bACaF9ac03924EB475a0"
+      ]
+    },
+    {
+      "name": "polygon Mumbai Testnet",
+      "chainId": "2",
+      "endpoint": "https://matic-mumbai.chainstacklabs.com/",
+      "bridge": "0x1A83504a629eD139c9108f8231aF25C101DceF40",
+      "erc20Handler": "0xb38A53487cb7B64e1309595770aBc3A71561e3bF",
+      "erc721Handler": "0x2D7daad5f0E0D775Bd1D9324938ED8E11D7B0911",
+      "genericHandler": "0xbf97a762A13560ee770EEF59ad69328Cf78E0ea1",
+      "gasLimit": "1000000",
+      "maxGasPrice": "2000000000",
+      "startBlock": "0",
+      "http": "true",
+      "relayers": [
+        "0xff93B45308FD417dF303D6515aB04D9e89a750Ca",
+        "0x8e0a907331554AF72563Bd8D43051C2E64Be5d35",
+        "0x24962717f8fA5BA3b931bACaF9ac03924EB475a0"
+      ]
+    },
+    {
+      "name": "Moonbeam Moonbase Alpha",
+      "chainId": "3",
+      "endpoint": "https://moonbeam-alpha.api.onfinality.io/public",
+      "bridge": "0x1A83504a629eD139c9108f8231aF25C101DceF40",
+      "erc20Handler": "0xb38A53487cb7B64e1309595770aBc3A71561e3bF",
+      "erc721Handler": "0x2D7daad5f0E0D775Bd1D9324938ED8E11D7B0911",
+      "genericHandler": "0xbf97a762A13560ee770EEF59ad69328Cf78E0ea1",
+      "gasLimit": "1000000",
+      "maxGasPrice": "2000000000",
+      "startBlock": "0",
+      "http": "true",
+      "relayers": [
+        "0xff93B45308FD417dF303D6515aB04D9e89a750Ca",
+        "0x8e0a907331554AF72563Bd8D43051C2E64Be5d35",
+        "0x24962717f8fA5BA3b931bACaF9ac03924EB475a0"
+      ]
+    }
+  ]
+}

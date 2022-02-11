@@ -15,6 +15,9 @@ const registerResourceCmd = new Command("register-resource")
     .action(async function (args) {
         await setupParentArgs(args, args.parent.parent)
 
+        if (args.resourceId == constants.ERC20_RESOURCEID) {
+            args.resourceId = ethers.utils.hexZeroPad((args.targetContract + ethers.utils.hexlify(constants.DEFAULT_SOURCE_ID).substr(2)), 32);
+        }
         const bridgeInstance = new ethers.Contract(args.bridge, constants.ContractABIs.Bridge.abi, args.wallet);
         log(args,`Registering contract ${args.targetContract} with resource ID ${args.resourceId} on handler ${args.handler}`);
         const tx = await bridgeInstance.adminSetResource(args.handler, args.resourceId, args.targetContract, { gasPrice: args.gasPrice, gasLimit: args.gasLimit});
